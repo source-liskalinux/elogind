@@ -18,7 +18,6 @@ build() {
         --prefix=/usr \
         --sysconfdir=/etc \
         --localstatedir=/var \
-        -Drootlibdir=/usr/lib \
         -Dcgroup-controller=elogind \
         -Ddefault-hierarchy=unified \
         -Dpamlibdir=/usr/lib/security \
