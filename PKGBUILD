@@ -13,7 +13,7 @@ source=("https://github.com/elogind/elogind/archive/refs/tags/v${pkgver}.tar.gz"
 sha256sums=('SKIP')
 
 build() {
-    cd "${pkgname}-${pkgver}"
+    cd "v${pkgver}"
     meson setup build \
         --prefix=/usr \
         --sysconfdir=/etc \
@@ -27,7 +27,7 @@ build() {
 }
 
 package() {
-    cd "${pkgname}-${pkgver}"
+    cd "v${pkgver}"
     DESTDIR="${pkgdir}" meson install -C build
     ln -s elogind/sd-login.h "${pkgdir}/usr/include/sd-login.h"
     rm -rf "${pkgdir}/usr/lib/systemd"
