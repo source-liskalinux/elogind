@@ -1,5 +1,5 @@
 pkgname=elogind
-pkgver=255.5
+pkgver=257.16
 pkgrel=1
 pkgdesc="The systemd project's logind, extracted to a standalone daemon"
 arch=('x86_64')
@@ -9,7 +9,7 @@ depends=('dbus' 'pam' 'libcap' 'udev' 'util-linux-libs')
 makedepends=('meson' 'ninja' 'gperf' 'python-jinja' 'docbook-xsl')
 provides=('libelogind')
 conflicts=('systemd-libs')
-source=("https://github.com/elogind/elogind/archive/v${pkgver}/${pkgname}-${pkgver}.tar.gz")
+source=("https://github.com/elogind/elogind/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=('SKIP')
 
 build() {
