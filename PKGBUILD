@@ -1,3 +1,8 @@
+# PKGBUILD For elogind
+
+# Contributor: Janorovic Volkov <janorovicvolkov@gmail.com>
+# Maintainer: Janorovic Volkov <janorovicvolkov@gmail.com>
+
 pkgname=elogind
 pkgver=257.16
 pkgrel=1
